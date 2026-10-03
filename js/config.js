@@ -5,9 +5,9 @@
 window.WEDX_CONFIG = {
   legalName: "WedX by Ars Productions",
   email: "hello@wedxbyars.com",
-  phoneDisplay: "+91 00000 00000",
-  phoneHref: "tel:+910000000000",
-  address: "Ars Productions, India",
+  phoneDisplay: "+91 63958 97590",
+  phoneHref: "tel:+916395897590",
+  address: "KE, 88, Kaveri Kunj, Phase 1, Kamla Nagar, Agra, Uttar Pradesh",
   freeShippingOver: 2000,
   shippingFee: 149,
   product: {

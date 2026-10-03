@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your bag — WedX</title>
+  <meta name="description" content="Review your WedX order and place it for payment.">
+  <meta name="theme-color" content="#f3efe8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="announce">
+      <p>Free shipping on orders above <span data-threshold>₹2,000</span> <span aria-hidden="true">·</span> Ovia, a WedX gift house</p>
+    </div>
+    <div class="bar">
+      <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span class="sr">Menu</span>
+      </button>
+      <a class="logo" href="index.html">
+        <span class="logo-mark">Wed<em>X</em></span>
+        <span class="logo-sub">by Ars Productions</span>
+      </a>
+      <nav id="site-nav" class="nav" data-nav>
+        <a href="shop.html">Shop</a>
+        <a href="ovia.html">Ovia</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <a class="bag" href="checkout.html" aria-current="page">Bag <span data-cart-count>0</span></a>
+    </div>
+  </header>
+  <button class="backdrop" type="button" data-backdrop hidden aria-label="Close menu"></button>
+
+  <main id="main">
+    <header class="page-intro">
+      <div class="wrap">
+        <p class="eyebrow">Bag</p>
+        <h1>Your order</h1>
+      </div>
+    </header>
+    <section class="wrap checkout-grid" data-checkout>
+      <div>
+        <div data-lines></div>
+        <div class="empty" data-empty>
+          <h2>Your bag is empty.</h2>
+          <p class="fine">The Oud reed diffuser is the piece the house is offering now.</p>
+          <div class="actions">
+            <a class="btn" href="product.html">Shop the diffuser</a>
+          </div>
+        </div>
+      </div>
+      <aside class="summary" data-summary hidden>
+        <h2>Checkout</h2>
+        <dl class="totals">
+          <div><dt>Subtotal</dt><dd data-sub>—</dd></div>
+          <div><dt>Shipping</dt><dd data-ship>—</dd></div>
+          <div><dt>Total</dt><dd data-total>—</dd></div>
+        </dl>
+        <form data-checkout-form>
+          <p class="form-error" data-form-error hidden></p>
+          <div class="field">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="name" autocomplete="name" required maxlength="80">
+          </div>
+          <div class="field">
+            <label for="order-email">Email</label>
+            <input id="order-email" name="email" type="email" autocomplete="email" required maxlength="120">
+          </div>
+          <div class="field">
+            <label for="order-phone">Mobile</label>
+            <input id="order-phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" required maxlength="16" placeholder="10-digit mobile">
+          </div>
+          <div class="field">
+            <label for="order-address">Address</label>
+            <textarea id="order-address" name="address" autocomplete="street-address" required maxlength="180" rows="3"></textarea>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="city">City</label>
+              <input id="city" name="city" autocomplete="address-level2" required maxlength="60">
+            </div>
+            <div class="field">
+              <label for="state">State</label>
+              <input id="state" name="state" autocomplete="address-level1" required maxlength="60">
+            </div>
+          </div>
+          <div class="field">
+            <label for="pin">PIN code</label>
+            <input id="pin" name="pin" inputmode="numeric" autocomplete="postal-code" required maxlength="6" pattern="[0-9]{6}">
+          </div>
+          <fieldset class="pay">
+            <legend>Payment</legend>
+            <label><input type="radio" name="pay" value="online" checked> Pay online — UPI, cards, netbanking</label>
+            <label><input type="radio" name="pay" value="cod"> Pay on delivery</label>
+          </fieldset>
+          <label class="check">
+            <input type="checkbox" name="agree" required>
+            <span>I agree to the <a href="terms.html">Terms &amp; Conditions</a> and the <a href="refunds.html">Refund/Cancellation Policy</a>.</span>
+          </label>
+          <button class="btn btn-block" type="submit">Place order</button>
+          <p class="fine">Nothing is charged on this page. An online order is confirmed by a secure payment link. Pay on delivery is collected when the order arrives.</p>
+        </form>
+      </aside>
+    </section>
+    <section class="receipt" data-receipt hidden></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <p class="logo-mark">Wed<em>X</em></p>
+      <p>A layer of quiet sophistication, by Ars Productions. Ovia is our gift house.</p>
+    </div>
+    <div class="footer-col">
+      <h2>House</h2>
+      <a href="shop.html">Shop</a>
+      <a href="ovia.html">Ovia</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h2>Policies</h2>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="refunds.html">Refund/Cancellation Policy</a>
+      <a href="shipping.html">Shipping</a>
+    </div>
+    <div class="footer-col">
+      <h2>Visit</h2>
+      <a data-mail href="mailto:hello@wedxbyars.com">hello@wedxbyars.com</a>
+      <a data-phone href="tel:+910000000000">+91 00000 00000</a>
+      <p data-bind="address">Ars Productions, India</p>
+    </div>
+    <div class="footer-base">
+      <p>© <span data-year>2026</span> <span data-bind="legal">WedX by Ars Productions</span></p>
+      <p>Prices in INR, inclusive of applicable taxes.</p>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

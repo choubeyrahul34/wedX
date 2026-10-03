@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — WedX by Ars Productions</title>
+  <meta name="description" content="Contact Us. Email, phone, and address for WedX by Ars Productions. We reply within two working days.">
+  <meta name="theme-color" content="#f3efe8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="announce">
+      <p>Free shipping on orders above <span data-threshold>₹2,000</span> <span aria-hidden="true">·</span> Ovia, a WedX gift house</p>
+    </div>
+    <div class="bar">
+      <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span class="sr">Menu</span>
+      </button>
+      <a class="logo" href="index.html">
+        <span class="logo-mark">Wed<em>X</em></span>
+        <span class="logo-sub">by Ars Productions</span>
+      </a>
+      <nav id="site-nav" class="nav" data-nav>
+        <a href="shop.html">Shop</a>
+        <a href="ovia.html">Ovia</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+      </nav>
+      <a class="bag" href="checkout.html">Bag <span data-cart-count>0</span></a>
+    </div>
+  </header>
+  <button class="backdrop" type="button" data-backdrop hidden aria-label="Close menu"></button>
+
+  <main id="main">
+    <header class="page-intro">
+      <div class="wrap">
+        <p class="eyebrow">WedX by Ars Productions</p>
+        <h1>Contact Us</h1>
+        <p class="lede">This is the official contact for orders, payments, delivery, and returns. Write to us here and we will reply within two working days.</p>
+      </div>
+    </header>
+    <section class="wrap contact-grid">
+      <form data-contact-form>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required maxlength="80">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required maxlength="120">
+        </div>
+        <div class="field">
+          <label for="phone">Mobile</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="16">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required maxlength="800" rows="5"></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <div data-contact-thanks hidden>
+        <h2>Your note is ready.</h2>
+        <p class="fine">If your email app did not open, write to us directly at the address beside this form.</p>
+      </div>
+      <aside class="stack">
+        <p class="eyebrow">Reach the seller</p>
+        <p><strong>Email</strong><br><a data-mail href="mailto:hello@wedxbyars.com">hello@wedxbyars.com</a></p>
+        <p><strong>Phone</strong><br><a data-phone href="tel:+910000000000">+91 00000 00000</a></p>
+        <p><strong>Address</strong><br><span data-bind="address">Ars Productions, India</span></p>
+        <p>WedX is a brand of Ars Productions. Use this contact for a new order, a payment that needs checking, a delivery update, or a cancellation. If you already have an order, include the order reference, the name on the order, and the mobile number you used at checkout.</p>
+        <p class="fine">Returns and damaged deliveries are handled under the <a href="refunds.html">Refund/Cancellation Policy</a>. We reply within two working days.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <p class="logo-mark">Wed<em>X</em></p>
+      <p>A layer of quiet sophistication, by Ars Productions. Ovia is our gift house.</p>
+    </div>
+    <div class="footer-col">
+      <h2>House</h2>
+      <a href="shop.html">Shop</a>
+      <a href="ovia.html">Ovia</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h2>Policies</h2>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="refunds.html">Refund/Cancellation Policy</a>
+      <a href="shipping.html">Shipping</a>
+    </div>
+    <div class="footer-col">
+      <h2>Visit</h2>
+      <a data-mail href="mailto:hello@wedxbyars.com">hello@wedxbyars.com</a>
+      <a data-phone href="tel:+910000000000">+91 00000 00000</a>
+      <p data-bind="address">Ars Productions, India</p>
+    </div>
+    <div class="footer-base">
+      <p>© <span data-year>2026</span> <span data-bind="legal">WedX by Ars Productions</span></p>
+      <p>Prices in INR, inclusive of applicable taxes.</p>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

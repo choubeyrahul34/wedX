@@ -4,7 +4,7 @@
    If you change product.price, also change the price in the schema on product.html. */
 window.WEDX_CONFIG = {
   legalName: "WedX by Ars Productions",
-  email: "hello@wedxbyars.com",
+  email: "Wedxstudios@gmail.com",
   phoneDisplay: "+91 63958 97590",
   phoneHref: "tel:+916395897590",
   address: "KE, 88, Kaveri Kunj, Phase 1, Kamla Nagar, Agra, Uttar Pradesh",
